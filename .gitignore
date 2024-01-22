@@ -10,3 +10,4 @@
 finance/src/data**
 .ruff_cache**a
 profiles.yml
+.user.yml
