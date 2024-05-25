@@ -8,3 +8,13 @@ services:
       - 9000:9000
     volumes:
       - ./data:/var/lib/clickhouse
+  postgres:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - ./data:/var/lib/postgresql/data
